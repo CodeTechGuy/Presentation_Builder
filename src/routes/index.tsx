@@ -1,10 +1,12 @@
 import { createFileRoute } from '@tanstack/react-router'
-
 import { Switch } from '#/components/ui/switch'
+import { authClient } from '#/lib/auth-client'
 
-export const Route = createFileRoute('/')({ component: Home })
+export const Route = createFileRoute('/')({ component: App })
 
-function Home() {
+function App() {
+  const {data} = authClient.useSession()
+  console.log(data)
   return (
     <div>
       <Switch/>
