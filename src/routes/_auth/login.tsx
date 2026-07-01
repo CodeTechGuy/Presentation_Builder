@@ -1,4 +1,4 @@
-import { getSession } from '#/lib/auth.function'
+import { getSession } from '#/lib/auth.functions'
 import LoginForm from '@/components/auth/login-form'
 import { createFileRoute, Link, redirect } from '@tanstack/react-router'
 import { Presentation } from 'lucide-react'
