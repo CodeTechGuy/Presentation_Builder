@@ -140,6 +140,7 @@ import { createFileRoute, redirect, useNavigate } from '@tanstack/react-router'
 import { Sparkles, Wand2 } from 'lucide-react'
 import { useState } from 'react'
 import { toast } from 'sonner'
+import { PRESENTATION_TEMPLATES } from '#/features/presentations/constant/presentation-template'
 
 type HomeFormState = {
   content: string
@@ -376,7 +377,7 @@ function HomePage() {
         </div>
 
         {/* Templates */}
-        {/* <div className="mt-8">
+        <div className="mt-8">
           <p className="text-center text-sm text-muted-foreground mb-3">
             Try a template
           </p>
@@ -400,7 +401,7 @@ function HomePage() {
               </button>
             ))}
           </div>
-        </div> */}
+        </div>
       </div>
     </main>
   )
